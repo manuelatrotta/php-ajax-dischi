@@ -49,7 +49,7 @@ $database = [
       'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51O7k2hqS1L._SL1417_.jpg'
     ],
     [
-      'title' => '()',
+      'title' => '( )',
       'author' => 'Sigur Ros',
       'year' => 2018,
       'poster' => 'https://images-na.ssl-images-amazon.com/images/I/615Pf7ux8pL._SX466_.jpg'
