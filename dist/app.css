@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+}
+
+.container {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.selection_album {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.album {
+  width: 200px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster {
+  width: 198px;
+  height: 198px;
+}
+

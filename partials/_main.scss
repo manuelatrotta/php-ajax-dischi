@@ -1,0 +1,21 @@
+.selection_album {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+
+}
+
+.album {
+  width: 200px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster {
+  width: 198px;
+  height: 198px;
+}
