@@ -1,7 +1,8 @@
 <?php
 include __DIR__ . '/partials/server.php';
 
-var_dump($database);
+//var_dump($database);
+//
  ?>
 
  <!DOCTYPE html>
@@ -12,17 +13,17 @@ var_dump($database);
    </head>
    <body>
      <header>
-       <img src="" alt="spotify-logo">
-
      </header>
      <main>
        <section class="selection_album">
+        <?php foreach ($database as $album) { ?>
          <div class="">
-           <img src="" alt="">
+           <img src="<?php echo $album["poster"]; ?>" alt="">
            <h2></h2>
            <h4></h4>
            <p></p>
          </div>
+        <?php  } ?>
 
        </section>
 
