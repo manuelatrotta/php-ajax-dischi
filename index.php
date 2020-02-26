@@ -17,11 +17,13 @@ include __DIR__ . '/partials/server.php';
      <header>
        <div class="container">
         <img class="logo" src="dist/img/logo.png" alt="logo spotify">
+      </div>
      </header>
      <!--/header-->
      <!--main-->
      <main>
-       <section class="selection_album">
+    <div class="container">
+       <div class="selection_album">
         <?php foreach ($database as $album) { ?>
          <div class="album">
            <img class="poster" src="<?php echo $album["poster"]; ?>" alt="">
@@ -30,7 +32,8 @@ include __DIR__ . '/partials/server.php';
            <p><?php echo $album["year"]; ?></p>
          </div>
         <?php  } ?>
-       </section>
+      </div>
+    </div>
      </main>
     <!--/main-->
    </body>
