@@ -1,6 +1,5 @@
 <?php
-include __DIR__ . '/partials/server.php';
+  include "partisls/server.php";
 
-var_dump($database);
 
- ?>
+  echo json_encode($database); ?>
