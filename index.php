@@ -27,9 +27,9 @@ include __DIR__ . '/partials/server.php';
         <?php foreach ($database as $album) { ?>
          <div class="album">
            <img class="poster" src="<?php echo $album["poster"]; ?>" alt="">
-           <h3 class="title"><?php echo $album["title"]; ?></h3>
-           <h4><?php echo $album["author"]; ?></h4>
-           <p><?php echo $album["year"]; ?></p>
+           <h4 class="title"><?php echo $album["title"]; ?></h4>
+           <h5><?php echo $album["author"]; ?></h5>
+           <small><?php echo $album["year"]; ?></small>
          </div>
         <?php  } ?>
       </div>
