@@ -15819,6 +15819,16 @@ var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebar
 
 $(document).ready(function () {
   alert('welcome');
+  $.ajax({
+    'url': 'http://localhost:8890/php-ajax-dischi/partials/callserver.php',
+    'method': 'GET',
+    'success': function success(data) {
+      console.log(data);
+    },
+    'error': function error(request, state, errors) {
+      alert('error' + errors);
+    }
+  });
 });
 
 /***/ }),
