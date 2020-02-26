@@ -1,5 +1,4 @@
 
-
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
@@ -20,16 +19,16 @@
      <main>
     <div class="container">
        <div class="selection_album">
-        <?php foreach ($database as $album) { ?>
-         <div class="album">
-           <img class="poster" src="<?php echo $album["poster"]; ?>" alt="">
-           <h4 class="title"><?php echo $album["title"]; ?></h4>
-           <h5><?php echo $album["author"]; ?></h5>
-           <small><?php echo $album["year"]; ?></small>
-         </div>
-        <?php  } ?>
-      </div>
+       </div>
     </div>
+         <script id="entry-template" type="text/x-handlebars-template">
+          <div class="album">
+            <img class="poster" src="{{{poster}}}" alt="">
+            <h4 class="title">{{title}}</h4>
+            <h5>{{artist}}</h5>
+            <small>{{year}}</small>
+          </div>
+      </script>
      </main>
     <!--/main-->
     <script src="dist/app.js" charset="utf-8"></script>
