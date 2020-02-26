@@ -18,7 +18,7 @@ body {
 header {
   width: $total_100;
   height: 60px;
-  padding: 20px 0;
+  padding: 10px 220px;
   background-color: $blackColor;
   .logo {
     width: 65px;
@@ -32,9 +32,9 @@ header {
 .selection_album {
   display: flex;
   justify-content: space-around;
-  padding: 150px;
+  padding : 80px 150px;
   flex-wrap: wrap;
-  margin: auto;
+  //margin: auto;
   color: $whiteColor;
   text-align: center;
   .album {
