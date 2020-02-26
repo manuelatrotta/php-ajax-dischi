@@ -8,47 +8,44 @@ body {
   background-color: $primaryColor;
 }
 
-header {
-  width: $total_100;
-  height: 70px;
-  background-color: $blackColor;
-  margin-bottom: 60px;
-}
-
+//general container
 .container {
   width: $size_80;
   margin: auto;
 }
 
-
-
-
-
-.logo {
-  width: 65px;
-  text-align: center;
-  vertical-align: middle;
+//header
+header {
+  width: $total_100;
+  height: 60px;
+  padding: 20px 0;
+  background-color: $blackColor;
+  .logo {
+    width: 65px;
+    text-align: center;
+    vertical-align: middle;
+  }
 }
+
+//main--
 
 .selection_album {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  padding: 150px;
   flex-wrap: wrap;
   margin: auto;
   color: $whiteColor;
   text-align: center;
-
-}
-
-.album {
-  width: 200px;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.poster {
-  width: 198px;
-  height: 198px;
+  .album {
+    width: 200px;
+    height: 200px;
+    background-color: $blackColor;
+    margin-bottom: 50px;
+    padding: 10px;
+    .poster {
+      width: 100px;
+      //height: 198px;
+    }
+  }
 }
