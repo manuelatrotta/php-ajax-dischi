@@ -25,7 +25,7 @@
           <div class="album">
             <img class="poster" src="{{{poster}}}" alt="">
             <h4 class="title">{{title}}</h4>
-            <h5>{{artist}}</h5>
+            <h5>{{author}}</h5>
             <small>{{year}}</small>
           </div>
       </script>

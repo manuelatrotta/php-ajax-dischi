@@ -15823,7 +15823,16 @@ $(document).ready(function () {
     'url': 'http://localhost:8890/php-ajax-dischi/partials/callserver.php',
     'method': 'GET',
     'success': function success(data) {
-      console.log(data);
+      //console.log(data);
+      var source = $('#entry-template').html();
+      var template = Handlebars.compile(source);
+
+      for (var i = 0; i < data.length; i++) {
+        console.log(data[i]);
+        var context = data[i];
+        var html = template(context);
+        $('.selection_album').append(html);
+      }
     },
     'error': function error(request, state, errors) {
       alert('error' + errors);
