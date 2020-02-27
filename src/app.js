@@ -11,13 +11,7 @@ $(document).ready(function() {
     'method': 'GET',
     'success': function (data) {
     //console.log(data);
-        var source = $('#entry-template').html();
-        var template = Handlebars.compile(source);
-        for (var i = 0; i < data.length; i++) {
-         console.log(data[i]);
-         var context = data[i];
-         var html = template(context);
-         $('.selection_album').append(html);
+        printData(data);
         }
     },
     'error': function (request, state, errors) {
@@ -25,3 +19,14 @@ $(document).ready(function() {
     }
   });
 });
+
+
+function printData(data) {
+  var source = $('#entry-template').html();
+  var template = Handlebars.compile(source);
+  for (var i = 0; i < data.length; i++) {
+   console.log(data[i]);
+   var context = data[i];
+   var html = template(context);
+   $('.selection_album').append(html);
+}
